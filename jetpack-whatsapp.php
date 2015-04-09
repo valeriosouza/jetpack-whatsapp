@@ -3,7 +3,7 @@
  * Plugin Name: Jetpack WhatsApp
  * Plugin URI: http://wordpress.org/plugins/*******
  * Description: Add Jetpack Whatsapp
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: Valerio Souza
  * Author URI: http://www.valeriosouza.com.br
  * License: AGPLv3 or later
@@ -103,8 +103,3 @@ class Jetpack_Whatsapp_Pack {
 		return $links;
 	}
 }
-
-/*register_activation_hook( __FILE__ , 'Feedly_API::activation' );
-register_deactivation_hook( __FILE__ , 'Feedly_API::deactivation' );
-register_activation_hook( __FILE__ , 'Google_API::activation' );
-register_deactivation_hook( __FILE__ , 'Google_API::deactivation' );*/
