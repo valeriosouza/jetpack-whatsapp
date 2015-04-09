@@ -44,7 +44,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 				rawurlencode( ' - ' ),
 				rawurlencode( $this->get_share_url( $post->ID ) ),
 				esc_attr( $locale ),
-				esc_attr__( 'LINE it!', 'jetwhats' )
+				esc_attr__( 'WhatsApp it!', 'jetwhats' )
 			);
 		else
 			return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetwhats' ), __( 'Click to share on WhatsApp', 'jetwhats' ), 'share=whatsapp' );
@@ -68,7 +68,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		// Record stats
 		parent::process_request( $post, $post_data );
 
-		// Redirect to LINE
+		// Redirect to WhatsApp
 		wp_redirect( $whatsapp_url );
 		die();
 	}

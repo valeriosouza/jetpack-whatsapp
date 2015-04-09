@@ -30,8 +30,6 @@ define( 'jetwhats__VERSION',     '0.1.0' );
 
 add_action( 'init', array( 'Jetpack_Whatsapp_Pack', 'init' ) );
 
-require_once( jetwhats__PLUGIN_DIR . 'class.whatsapp-api.php' );
-
 class Jetpack_Whatsapp_Pack {
 	static $instance;
 
@@ -72,7 +70,7 @@ class Jetpack_Whatsapp_Pack {
 			return;
 		}
 
-		wp_enqueue_script( 'jetwhats', jetwhats__PLUGIN_URL . 'count.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
+		//wp_enqueue_script( 'jetwhats', jetwhats__PLUGIN_URL . 'count.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
 		wp_enqueue_style( 'jetwhats', jetwhats__PLUGIN_URL . 'style.css', array(), jetwhats__VERSION );
 	}
 
