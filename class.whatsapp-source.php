@@ -153,8 +153,9 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 		if( $this->smart )
 			return sprintf(
-				'<div class="whatsapp_button"><a href="whatsapp://send?text=%1$s%0D%0A%2$s" class="share-whatsapp %3$s" title="%4$s"></a></div>',
+				'<div class="whatsapp_button"><a href="whatsapp://send?text=%1$%2$%3$s" class="share-whatsapp %3$s" title="%4$s"></a></div>',
 				rawurlencode( $this->get_share_title( $post->ID ) ),
+				rawurlencode( ' - ' ),
 				rawurlencode( $this->get_share_url( $post->ID ) ),
 				esc_attr( $locale ),
 				esc_attr__( 'LINE it!', 'jetwhats' )
@@ -172,8 +173,9 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 	function process_request( $post, array $post_data ) {
 		$line_url = sprintf(
-			'whatsapp://send?text=%1$.' - '.%2$s',
+			'whatsapp://send?text=%1$%2$%3$s',
 			rawurlencode( $this->get_share_title( $post->ID ) ),
+			rawurlencode( ' - ' ),
 			rawurlencode( $this->get_share_url( $post->ID ) )
 		);
 
