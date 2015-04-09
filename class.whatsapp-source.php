@@ -59,12 +59,13 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function process_request( $post, array $post_data ) {
-		$whatsapp_url = sprintf(
+		/*$whatsapp_url = sprintf(
 			'whatsapp://send?text=%s: %s - %s',
 			__('Read this','jetpack-whatsapp'),
 			rawurlencode( $this->get_share_title( $post->ID ) ),
 			rawurlencode( $this->get_share_url( $post->ID ) )
-		);
+		);*/
+		$whatsapp_url = 'whatsapp://send?text='.__('Read this','jetpack-whatsapp').': '.rawurlencode( $this->get_share_title( $post->ID ) ).' - '.rawurlencode( $this->get_share_url( $post->ID ) ).'';
 
 		// Record stats
 		parent::process_request( $post, $post_data );
