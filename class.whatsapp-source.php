@@ -172,7 +172,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 	function process_request( $post, array $post_data ) {
 		$line_url = sprintf(
-			'whatsapp://send?text=%1$s%0D%0A%2$s',
+			'whatsapp://send?text=%1$.' - '.%2$s',
 			rawurlencode( $this->get_share_title( $post->ID ) ),
 			rawurlencode( $this->get_share_url( $post->ID ) )
 		);
