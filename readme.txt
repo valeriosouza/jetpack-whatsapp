@@ -19,11 +19,13 @@ This supplies additional Jetpack sharing WhatsApp Button for your website.
 
 Don't forget to install Jetpack!
 
-### License
+== License ==
 
-* Copyright (c) 2012-2014 [Daisuke Takahashi(Extend Wings)](http://www.extendwings.com/)
-* Portions (c) 2010-2012 Web Online.
-* Unless otherwise stated, all files in this repo is licensed under *GNU AFFERO GENERAL PUBLIC LICENSE, Version 3*. See *LICENSE* file.
+Jetpack WhatsApp is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+Jetpack WhatsApp is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with Post Notification by Email. If not, see <http://www.gnu.org/licenses/>.
 
 == Installation ==
 
