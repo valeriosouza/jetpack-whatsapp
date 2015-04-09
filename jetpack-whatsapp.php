@@ -9,6 +9,7 @@
  * License: AGPLv3 or later
  * Text Domain: jetwhats
  * Domain Path: /languages/
+ * GitHub Plugin URI: https://github.com/valeriosouza/jetpack-whatsapp
 */
 
 if( !function_exists('add_action') ) {
