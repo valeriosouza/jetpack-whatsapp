@@ -82,7 +82,7 @@ class Jetpack_Whatsapp_Pack {
 
 	function require_services() {
 		if( class_exists('Jetpack') ) {
-			require_once( jetwhats__PLUGIN_DIR . 'class.sharing-services.php' );
+			require_once( jetwhats__PLUGIN_DIR . 'class.whatsapp-service.php' );
 		}
 	}
 

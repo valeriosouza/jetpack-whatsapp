@@ -31,15 +31,15 @@ class jetwhats_Sharing_Service {
 	}
 
 	function add_sharing_services( $services ) {
-		include_once jetwhats__PLUGIN_DIR . 'class.sharing-sources.php';
+		include_once jetwhats__PLUGIN_DIR . 'class.whatsapp-source.php';
 
-		if( !array_key_exists( 'feedly', $services ) ) {
+		/*if( !array_key_exists( 'feedly', $services ) ) {
 			$services['feedly'] = 'Share_Feedly';
+		}*/
+		if( !array_key_exists( 'whatsapp', $services ) ) {
+			$services['whatsapp'] = 'jetwhats_Share_WhatsApp';
 		}
-		if( !array_key_exists( 'line', $services ) ) {
-			$services['line'] = 'Share_LINE';
-		}
-		if( !array_key_exists( 'delicious', $services ) ) {
+		/*if( !array_key_exists( 'delicious', $services ) ) {
 			$services['delicious'] = 'Share_Delicious';
 		}
 		if( !array_key_exists( 'instapaper', $services ) ) {
@@ -50,7 +50,7 @@ class jetwhats_Sharing_Service {
 		}
 		if( !array_key_exists( 'google-plus-1', $services ) || 'Share_GooglePlus1' == $services['google-plus-1'] ) {
 			$services['google-plus-1'] = 'Share_Google';
-		}
+		}*/
 
 		return $services;
 	}

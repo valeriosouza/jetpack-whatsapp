@@ -5,7 +5,7 @@ if( !function_exists('add_action') ) {
 	exit;
 }
 
-class Share_Feedly extends Sharing_Source {
+/*class Share_Feedly extends Sharing_Source {
 	public $shortname = 'feedly';
 
 	function __construct( $id, array $settings ) {
@@ -117,9 +117,9 @@ class Share_Feedly extends Sharing_Source {
 		die();
 	}
 }
-
-class Share_LINE extends Sharing_Source {
-	var $shortname = 'line';
+*/
+class jetwhats_Share_WhatsApp extends Sharing_Source {
+	var $shortname = 'whatsapp';
 
 	function __construct( $id, array $settings ) {
 		parent::__construct( $id, $settings );
@@ -131,7 +131,7 @@ class Share_LINE extends Sharing_Source {
 	}
 
 	function get_name() {
-		return __( 'LINE', 'jetwhats' );
+		return __( 'WhatsApp', 'jetwhats' );
 	}
 
 	function has_custom_button_style() {
@@ -153,14 +153,14 @@ class Share_LINE extends Sharing_Source {
 
 		if( $this->smart )
 			return sprintf(
-				'<div class="line_button"><a href="http://line.me/R/msg/text/?%1$s%0D%0A%2$s" class="share-line %3$s" title="%4$s"></a></div>',
+				'<div class="whatsapp_button"><a href="whatsapp://send?text=%1$s%0D%0A%2$s" class="share-whatsapp %3$s" title="%4$s"></a></div>',
 				rawurlencode( $this->get_share_title( $post->ID ) ),
 				rawurlencode( $this->get_share_url( $post->ID ) ),
 				esc_attr( $locale ),
 				esc_attr__( 'LINE it!', 'jetwhats' )
 			);
 		else
-			return $this->get_link( get_permalink( $post->ID ), _x( 'LINE', 'share to', 'jetwhats' ), __( 'Click to share on LINE', 'jetwhats' ), 'share=line' );
+			return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetwhats' ), __( 'Click to share on WhatsApp', 'jetwhats' ), 'share=whatsapp' );
 	}
 
 	function display_header() {
@@ -172,7 +172,7 @@ class Share_LINE extends Sharing_Source {
 
 	function process_request( $post, array $post_data ) {
 		$line_url = sprintf(
-			'http://line.me/R/msg/text/?%1$s%0D%0A%2$s',
+			'whatsapp://send?text=%1$s%0D%0A%2$s',
 			rawurlencode( $this->get_share_title( $post->ID ) ),
 			rawurlencode( $this->get_share_url( $post->ID ) )
 		);
@@ -186,7 +186,7 @@ class Share_LINE extends Sharing_Source {
 	}
 }
 
-class Share_Delicious extends Sharing_Source {
+/*class Share_Delicious extends Sharing_Source {
 	var $shortname = 'delicious';
 
 	function __construct( $id, array $settings ) {
@@ -398,4 +398,4 @@ class Share_Google extends Share_GooglePlus1 {
 
 		parent::display_footer();
 	}
-}
+}*/
