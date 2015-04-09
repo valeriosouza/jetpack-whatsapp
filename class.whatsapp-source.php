@@ -60,7 +60,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 	function process_request( $post, array $post_data ) {
 		$whatsapp_url = sprintf(
-			'whatsapp://send?text=%s: %s - %s',
+			'whatsapp://send?text=%s%s%s',
 			__('Read this','jetpack-whatsapp'),
 			rawurlencode( $this->get_share_title( $post->ID ) ),
 			rawurlencode( $this->get_share_url( $post->ID ) )
