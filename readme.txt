@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P5QTG
 Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: AGPLv3 or later
 License URI: http://www.gnu.org/licenses/agpl.txt
 
