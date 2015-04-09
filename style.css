@@ -1,153 +1,17 @@
 /**
-* 1.1 Feedly
+* 1.1 LINE
 */
 
 /* Icon and Text */
-.sd-social-icon .sd-content ul li.share-feedly a:before,
-.sd-social-text .sd-content ul li.share-feedly a:before,
-.sd-content ul li.share-feedly div.option.option-smart-off a:before,
-.sd-social-icon-text .sd-content li.share-feedly a:before,
-li.service.share-feedly span:before {
+.sd-social-icon .sd-content ul li.share-whatsapp a:before,
+.sd-social-text .sd-content ul li.share-whatsapp a:before,
+.sd-content ul li.share-whatsapp div.option.option-smart-off a:before,
+.sd-social-icon-text .sd-content li.share-whatsapp a:before,
+li.service.share-whatsapp span:before {
 	content:" ";
-	background-image:url("images/feedly/shape.png");
-	background-image:image-set(url("images/feedly/shape.png") 1x, url("images/feedly/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/feedly/shape.png") 1x, url("images/feedly/shape@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:16px 14.2px;
-	height:16px;
-	width:16px;
-}
-
-/* Text only */
-.sd-social-icon .sd-content ul li.share-feedly a.no-text:before {
-	background:none !important;
-}
-
-/* Icon only */
-.sd-social-icon .sd-content ul li[class*="share-"].share-feedly a.sd-button {
-/*
-	background-color:#87c040;
-	background-color:#2bb24c;
-*/
-	background-color:#6cc655;
-	background-image:url("images/feedly/circle.png");
-	background-image:image-set(url("images/feedly/circle.png") 1x, url("images/feedly/circle@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/feedly/circle.png") 1x, url("images/feedly/circle@2x.png") 2x);
-	background-repeat:no-repeat;
-	background-position:2.3px 2px;
-}
-
-/* Official Button (Admin Preview) */
-.preview-feedly .option-smart-on {
-	background-image:url("images/feedly/rectangle-sample.png");
-	background-image:-webkit-image-set(url("images/feedly/rectangle-sample.png") 1x, url("images/feedly/rectangle-sample@2x.png") 2x);
-	background-image:image-set(url("images/feedly/rectangle-sample.png") 1x, url("images/feedly/rectangle-sample@2x.png") 2x);
-	background-repeat:no-repeat;
-	background-attachment:scroll;
-	background-position:left top;
-	background-size:94px 20px;
-	height:20px;
-	width:94px;
-}
-
-/* Official Button */
-.sd-social-official .sd-content li.share-feedly .feedly_button {
-	line-height:20px;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button table,
-.sd-social-official .sd-content li.share-feedly .feedly_button td,
-.sd-social-official .sd-content li.share-feedly .feedly_button th,
-.sd-social-official .sd-content li.share-feedly .feedly_button tr {
-	background-color: transparent;
-	border:none;
-	padding: 0;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:button"],
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:button"] i,
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"],
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-number {
-	display:inline-block;
-	height:20px;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:button"],
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:button"] i {
-	width:61px;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:button"] i {
-	background-image:url("images/feedly/rectangle.png");
-	background-image:-webkit-image-set(url("images/feedly/rectangle.png") 1x, url("images/feedly/rectangle@2x.png") 2x);
-	background-image:image-set(url("images/feedly/rectangle.png") 1x, url("images/feedly/rectangle@2x.png") 2x);
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button .count-wrap,
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"],
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-number {
-	vertical-align:top;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button .count-wrap {
-	display:none;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-number {
-	box-sizing: border-box;
-	background: #fff;
-	padding: 0 9px;
-	margin: 0 0 0 6px;
-	border: 1px solid #9197a3;
-	border-radius: 2px;
-	max-width: 100%;
-	min-width: 15px;
-	color:#6a7180;
-	white-space: nowrap;
-	text-align: center;
-	line-height: 18px;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-arrow {
-	height: 0;
-	left: 2px;
-	position: relative;
-	top: -15px;
-	width: 5px;
-	z-index: 2;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-arrow s,
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-arrow i {
-	border-color: transparent #9197a3;
-	border-style: solid;
-	border-width: 4px 5px 4px 0;
-	display: block;
-	position: relative;
-	top: 1px;
-}
-
-.sd-social-official .sd-content li.share-feedly .feedly_button [data-scribe="component:count"] .count-arrow i {
-	border-right-color: #fff;
-	left: 2px;
-	top: -7px;
-}
-
-/**
-* 1.2 LINE
-*/
-
-/* Icon and Text */
-.sd-social-icon .sd-content ul li.share-line a:before,
-.sd-social-text .sd-content ul li.share-line a:before,
-.sd-content ul li.share-line div.option.option-smart-off a:before,
-.sd-social-icon-text .sd-content li.share-line a:before,
-li.service.share-line span:before {
-	content:" ";
-	background-image:url("images/LINE/shape.png");
-	background-image:image-set(url("images/LINE/shape.png") 1x, url("images/LINE/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/shape.png") 1x, url("images/LINE/shape@2x.png") 2x);
+	background-image:url("images/shape.png");
+	background-image:image-set(url("images/shape.png") 1x, url("images/shape@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/shape.png") 1x, url("images/shape@2x.png") 2x);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size:16px 16px;
@@ -156,212 +20,65 @@ li.service.share-line span:before {
 }
 
 /* Text only */
-.sd-social-icon .sd-content ul li.share-line a.no-text:before {
+.sd-social-icon .sd-content ul li.share-whatsapp a.no-text:before {
 	background:none !important;
 }
 
 /* Icon only */
-.sd-social-icon .sd-content ul li[class*="share-"].share-line a.sd-button {
+.sd-social-icon .sd-content ul li[class*="share-"].share-whatsapp a.sd-button {
 	background-color:#00b900;
-	background-image:url("images/LINE/shape-white.png");
-	background-image:image-set(url("images/LINE/shape-white.png") 1x, url("images/LINE/shape-white@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/shape-white.png") 1x, url("images/LINE/shape-white@2x.png") 2x);
+	background-image:url("images/shape-white.png");
+	background-image:image-set(url("images/shape-white.png") 1x, url("images/shape-white@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/shape-white.png") 1x, url("images/shape-white@2x.png") 2x);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:20px 20px;
 }
 
 /* Official Button (Admin Preview) */
-.preview-line .option-smart-on {
+.preview-whatsapp .option-smart-on {
 	height:20px;
 	width: 78px;
-	background-image: url("images/LINE/rectangle-en.png");
-	background-image:image-set(url("images/LINE/rectangle-en.png") 1x, url("images/LINE/rectangle-en@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/rectangle-en.png") 1x, url("images/LINE/rectangle-en@2x.png") 2x);
+	background-image: url("images/rectangle-en.png");
+	background-image:image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: 78px 20px;
 }
 
 /* Official Button */
-.sd-social-official .sd-content li.share-line .line_button {
-	line-height:20px;
+.sd-social-official .sd-content li.share-whatsapp .whatsapp_button {
+	whatsapp-height:20px;
 }
 
-.sd-social-official .sd-content li.share-line .line_button a {
+.sd-social-official .sd-content li.share-whatsapp .whatsapp_button a {
 	height: 20px;
-	display: inline-block;
+	display: inwhatsapp-block;
 	background-repeat: no-repeat;
 	background-position:center;
 }
 
-.sd-social-official .sd-content li.share-line .line_button a.en {
+.sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.en {
 	width: 78px;
-	background-image: url("images/LINE/rectangle-en.png");
-	background-image:image-set(url("images/LINE/rectangle-en.png") 1x, url("images/LINE/rectangle-en@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/rectangle-en.png") 1x, url("images/LINE/rectangle-en@2x.png") 2x);
+	background-image: url("images/rectangle-en.png");
+	background-image:image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
 	background-size: 78px 20px;
 }
 
-.sd-social-official .sd-content li.share-line .line_button a.ja {
+.sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.ja {
 	width: 82px;
-	background-image: url("images/LINE/rectangle-ja.png");
-	background-image:image-set(url("images/LINE/rectangle-ja.png") 1x, url("images/LINE/rectangle-ja@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/rectangle-ja.png") 1x, url("images/LINE/rectangle-ja@2x.png") 2x);
+	background-image: url("images/rectangle-ja.png");
+	background-image:image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
 	background-size: 82px 20px;
 }
 
-.sd-social-official .sd-content li.share-line .line_button a.zh-hant {
+.sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.zh-hant {
 	width: 84px;
-	background-image: url("images/LINE/rectangle-zh-hant.png");
-	background-image:image-set(url("images/LINE/rectangle-zh-hant.png") 1x, url("images/LINE/rectangle-zh-hant@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/LINE/rectangle-zh-hant.png") 1x, url("images/LINE/rectangle-zh-hant@2x.png") 2x);
+	background-image: url("images/rectangle-zh-hant.png");
+	background-image:image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
+	background-image:-webkit-image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
 	background-size: 84px 20px;
-}
-
-/**
-* 1.3 Delicious
-*/
-
-/* Icon and Text */
-/* Official Button */
-.sd-social-icon .sd-content ul li.share-delicious a:before,
-.sd-social-text .sd-content ul li.share-delisious a:before,
-.sd-content ul li.share-delicious div.option.option-smart-off a:before,
-.sd-social-icon-text .sd-content li.share-delicious a:before,
-.sd-social-official .sd-content li.share-delicious a:before,
-li.service.share-delicious span:before {
-	content:" ";
-	background-image:url("images/Delicious/shape.png");
-	background-image:image-set(url("images/Delicious/shape.png") 1x, url("images/Delicious/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Delicious/shape.png") 1x, url("images/Delicious/shape@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:16px 16px;
-	height:16px;
-	width:16px;
-}
-
-/* Text only */
-.sd-social-icon .sd-content ul li.share-delicious a.no-text:before {
-	background:none !important;
-}
-
-/* Icon only */
-.sd-social-icon .sd-content ul li[class*="share-"].share-delicious a.sd-button {
-	background-color:#0b79e5;
-	background-image:url("images/Delicious/shape.png");
-	background-image:image-set(url("images/Delicious/shape.png") 1x, url("images/Delicious/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Delicious/shape.png") 1x, url("images/Delicious/shape@2x.png") 2x);
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size:16px 16px;
-}
-
-/* Official Button (Admin Preview) */
-.preview-delicious .option-smart-on {
-	height:20px;
-	width: 78px;
-	background-image:url("images/Delicious/rectangle.png");
-	background-image:image-set(url("images/Delicious/rectangle.png") 1x, url("images/Delicious/rectangle@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Delicious/rectangle.png") 1x, url("images/Delicious/rectangle@2x.png") 2x);
-	background-size: 78px 20px;
-}
-
-/**
-* 1.4 Instapaper
-*/
-
-/* Icon and Text */
-.sd-social-icon .sd-content ul li.share-instapaper a:before,
-.sd-social-text .sd-content ul li.share-instapaper a:before,
-.sd-content ul li.share-instapaper div.option.option-smart-off a:before,
-.sd-social-icon-text .sd-content li.share-instapaper a:before,
-li.service.share-instapaper span:before {
-	content:" ";
-	background-image:url("images/Instapaper/logo.png");
-	background-image:image-set(url("images/Instapaper/logo.png") 1x, url("images/Instapaper/logo@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Instapaper/logo.png") 1x, url("images/Instapaper/logo@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:16px 16px;
-	height:16px;
-	width:16px;
-}
-
-/* Text only */
-.sd-social-icon .sd-content ul li.share-instapaper a.no-text:before {
-	background:none !important;
-}
-
-/* Icon only */
-.sd-social-icon .sd-content ul li[class*="share-"].share-instapaper a.sd-button {
-	background-color:#fcfcfc;
-	background-image:url("images/Instapaper/I.png");
-	background-image:image-set(url("images/Instapaper/I.png") 1x, url("images/Instapaper/I@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Instapaper/I.png") 1x, url("images/Instapaper/I@2x.png") 2x);
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size:8px 16px;
-}
-
-/* Official Button (Admin Preview) */
-.preview-instapaper .option-smart-on {
-	height:20px;
-	width: 94px;
-	background-image: url("images/Instapaper/rectangle-sample.png");
-	background-image:image-set(url("images/Instapaper/rectangle-sample.png") 1x, url("images/Instapaper/rectangle-sample@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Instapaper/rectangle-sample.png") 1x, url("images/Instapaper/rectangle-sample@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size: 94px 20px;
-}
-
-/**
-* 1.5 Hatena
-*/
-
-/* Icon and Text */
-.sd-social-icon .sd-content ul li.share-hatena a:before,
-.sd-social-text .sd-content ul li.share-hatena a:before,
-.sd-content ul li.share-hatena div.option.option-smart-off a:before,
-.sd-social-icon-text .sd-content li.share-hatena a:before,
-li.service.share-hatena span:before {
-	content:" ";
-	background-image:url("images/Hatena/shape.png");
-	background-image:image-set(url("images/Hatena/shape.png") 1x, url("images/Hatena/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Hatena/shape.png") 1x, url("images/Hatena/shape@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size:16px 13.3px;
-	height:16px;
-	width:16px;
-}
-
-/* Text only */
-.sd-social-icon .sd-content ul li.share-hatena a.no-text:before {
-	background:none !important;
-}
-
-/* Icon only */
-.sd-social-icon .sd-content ul li[class*="share-"].share-hatena a.sd-button {
-	background-color:#0071c5;
-	background-image:url("images/Hatena/shape-white.png");
-	background-image:image-set(url("images/Hatena/shape-white.png") 1x, url("images/Hatena/shape-white@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Hatena/shape-white.png") 1x, url("images/Hatena/shape-white@2x.png") 2x);
-	background-repeat:no-repeat;
-	background-position:center;
-	background-size:16px 13.3px;
-}
-
-/* Official Button (Admin Preview) */
-.preview-hatena .option-smart-on {
-	height:20px;
-	width: 106px;
-	background-image: url("images/Hatena/rectangle-sample.png");
-	background-image:image-set(url("images/Hatena/rectangle-sample.png") 1x, url("images/Hatena/rectangle-sample@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/Hatena/rectangle-sample.png") 1x, url("images/Hatena/rectangle-sample@2x.png") 2x);
-	background-repeat: no-repeat;
-	background-position:center;
-	background-size: 106px, 20px;
 }
