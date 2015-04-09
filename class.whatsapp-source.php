@@ -17,7 +17,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function get_name() {
-		return __( 'WhatsApp', 'jetwhats' );
+		return __( 'WhatsApp', 'jetpack-whatsapp' );
 	}
 
 	function has_custom_button_style() {
@@ -36,18 +36,18 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 	function get_display( $post ) {
 		$locale = $this->guess_locale_from_lang( get_locale() );
-
-		if( $this->smart )
-			return sprintf(
-				'<div class="whatsapp_button"><a href="whatsapp://send?text=%1$s - %3$s" class="share-whatsapp %4$s" title="%5$s"></a></div>',
-				rawurlencode( $this->get_share_title( $post->ID ) ),
-				rawurlencode( ' - ' ),
-				rawurlencode( $this->get_share_url( $post->ID ) ),
-				esc_attr( $locale ),
-				esc_attr__( 'WhatsApp it!', 'jetwhats' )
-			);
-		else
-			return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetwhats' ), __( 'Click to share on WhatsApp', 'jetwhats' ), 'share=whatsapp' );
+		if ( wp_is_mobile() ) {
+			if( $this->smart )
+				return sprintf(
+					'<div class="whatsapp_button"><a href="whatsapp://send?text=%1$s - %2$s" class="share-whatsapp %3$s" title="%4$s"></a></div>',
+					rawurlencode( $this->get_share_title( $post->ID ) ),
+					rawurlencode( $this->get_share_url( $post->ID ) ),
+					esc_attr( $locale ),
+					esc_attr__( 'WhatsApp it!', 'jetpack-whatsapp' )
+				);
+			else
+				return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetpack-whatsapp' ), __( 'Click to share on WhatsApp', 'jetpack-whatsapp' ), 'share=whatsapp' );
+		}
 	}
 
 	function display_header() {
@@ -59,15 +59,17 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 
 	function process_request( $post, array $post_data ) {
 		$whatsapp_url = sprintf(
-			'whatsapp://send?text=%1$s - %3$s',
+			'whatsapp://send?text=%3$s: %1$s - %2$s',
 			rawurlencode( $this->get_share_title( $post->ID ) ),
-			rawurlencode( ' - ' ),
-			rawurlencode( $this->get_share_url( $post->ID ) )
+			rawurlencode( $this->get_share_url( $post->ID ) ),
+			__('Read this','jetpack-whatsapp')
 		);
 
 		// Record stats
 		parent::process_request( $post, $post_data );
 
+		print_r($whatsapp_url);
+		die();
 		// Redirect to WhatsApp
 		wp_redirect( $whatsapp_url );
 		die();

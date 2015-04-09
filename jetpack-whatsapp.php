@@ -3,11 +3,11 @@
  * Plugin Name: Jetpack WhatsApp
  * Plugin URI: http://wordpress.org/plugins/*******
  * Description: Add Jetpack Whatsapp
- * Version: 0.0.5beta
+ * Version: 0.0.6
  * Author: Valerio Souza
  * Author URI: http://www.valeriosouza.com.br
  * License: AGPLv3 or later
- * Text Domain: jetwhats
+ * Text Domain: jetpack-whatsapp
  * Domain Path: /languages/
  * GitHub Branch: master
  * GitHub Plugin URI: https://github.com/valeriosouza/jetpack-whatsapp
@@ -70,13 +70,12 @@ class Jetpack_Whatsapp_Pack {
 			return;
 		}
 
-		//wp_enqueue_script( 'jetwhats', jetwhats__PLUGIN_URL . 'count.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
-		wp_enqueue_style( 'jetwhats', jetwhats__PLUGIN_URL . 'style.css', array(), jetwhats__VERSION );
+		wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'style.css', array(), jetwhats__VERSION );
 	}
 
 	function admin_menu_assets( $hook ) {
 		if( $hook == 'settings_page_sharing' ) {
-			wp_enqueue_style( 'jetwhats', jetwhats__PLUGIN_URL . 'style.css', array('sharing', 'sharing-admin'), jetwhats__VERSION );
+			wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'style.css', array('sharing', 'sharing-admin'), jetwhats__VERSION );
 		}
 	}
 
@@ -87,15 +86,18 @@ class Jetpack_Whatsapp_Pack {
 	}
 
 	static function plugin_textdomain() {
-		load_plugin_textdomain( 'jetwhats', false, dirname( plugin_basename( jetwhats__PLUGIN_FILE ) ) . '/languages/' );
+		//load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( jetwhats__PLUGIN_FILE ) ) . '/languages/' );
+		$locale = get_locale();
+
+		load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	function plugin_row_meta( $links, $file ) {
-		if( plugin_basename( __FILE__ ) === $file ) {
+		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a href="%s">%s</a>',
 				esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P5QTGDB64SU8E&lc=US&item_name=WordPress%20Plugins&no_note=0&cn=Adicionar%20instru%c3%a7%c3%b5es%20especiais%20para%20o%20vendedor%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted'),
-				__( 'Donate', 'jetwhats' )
+				__( 'Donate', 'jetpack-whatsapp' )
 			);
 		}
 		return $links;
