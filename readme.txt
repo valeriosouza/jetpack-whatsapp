@@ -1,10 +1,10 @@
-=== Jetpack Sharing Source Pack ===
+=== Jetpack WhatsApp ===
 Contributors: extendwings
 Donate link: http://www.extendwings.com/donate/
 Tags: Jetpack, social, sharing, share, SNS, 
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 0.1.3
+Tested up to: 4.2
+Stable tag: 0.0.1
 License: AGPLv3 or later
 License URI: http://www.gnu.org/licenses/agpl.txt
 

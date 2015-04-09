@@ -1,9 +1,9 @@
 <?php
 /*
- * Plugin Name: Jetpack Whatsapp
+ * Plugin Name: Jetpack WhatsApp
  * Plugin URI: http://wordpress.org/plugins/*******
  * Description: Add Jetpack Whatsapp
- * Version: 0.1.0
+ * Version: 0.0.1
  * Author: Valerio Souza
  * Author URI: http://www.valeriosouza.com.br
  * License: AGPLv3 or later
