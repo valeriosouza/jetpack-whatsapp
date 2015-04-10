@@ -12,6 +12,10 @@ Add WhatsApp button to Jetpack Sharing
 
 == Description ==
 
+### Notice
+
+Don't forget to install Jetpack, and read [FAQ](https://wordpress.org/plugins/whatsapp-jetpack-button/faq/)!
+
 [Jetpack](http://jetpack.me) is awesome! It's used globally. But they can't cover WhatsApp. 
 This supplies additional Jetpack sharing WhatsApp Button for your website.
 
@@ -24,10 +28,6 @@ Known to develop, help in https://github.com/valeriosouza/jetpack-whatsapp
 Have suggestions for new features? https://github.com/valeriosouza/jetpack-whatsapp/issues/new
 
 Want to keep up with the latest news from this plugin? Follow Twitter [@valeriosza](https://twitter.com/valeriosza)
-
-### Notice
-
-Don't forget to install Jetpack!
 
 == Installation ==
 
