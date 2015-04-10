@@ -49,36 +49,36 @@ li.service.share-whatsapp span:before {
 
 /* Official Button */
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button {
-	whatsapp-height:20px;
+	line-height:20px;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a {
 	height: 20px;
-	display: inwhatsapp-block;
+	display: inline-block;
 	background-repeat: no-repeat;
 	background-position:center;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.en {
-	width: 78px;
+	width: 68px;
 	background-image: url("images/rectangle-en.png");
 	background-image:image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
 	background-image:-webkit-image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
-	background-size: 78px 20px;
+	background-size: 68px 20px;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.ja {
-	width: 82px;
+	width: 68px;
 	background-image: url("images/rectangle-ja.png");
 	background-image:image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
 	background-image:-webkit-image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
-	background-size: 82px 20px;
+	background-size: 68px 20px;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.zh-hant {
-	width: 84px;
+	width: 68px;
 	background-image: url("images/rectangle-zh-hant.png");
 	background-image:image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
 	background-image:-webkit-image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
-	background-size: 84px 20px;
+	background-size: 68px 20px;
 }
