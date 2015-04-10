@@ -1,14 +1,14 @@
 === Jetpack WhatsApp ===
 Contributors: valeriosza
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P5QTGDB64SU8E&lc=US&item_name=WordPress%20Plugins&no_note=0&cn=Adicionar%20instru%c3%a7%c3%b5es%20especiais%20para%20o%20vendedor%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP
+Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 0.0.24
-License: AGPLv3 or later
-License URI: http://www.gnu.org/licenses/agpl.txt
+Stable tag: 1.0.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl.txt
 
-Add Whatsapp button to Jetpack Sharing
+Add WhatsApp button to Jetpack Sharing
 
 == Description ==
 

@@ -1,15 +1,15 @@
 <?php
 /*
  * Plugin Name: Jetpack WhatsApp
- * Plugin URI: http://wordpress.org/plugins/*******
- * Description: Add Jetpack Whatsapp
- * Version: 0.0.24
+ * Plugin URI: http://wordpress.org/plugins/whatsapp-jetpack-button/
+ * Description: Add WhatsApp button to Jetpack Sharing
+ * Version: 1.0.0
  * Author: Valerio Souza
  * Author URI: http://www.valeriosouza.com.br
- * License: AGPLv3 or later
+ * License: GPLv3 or later
  * Text Domain: jetpack-whatsapp
  * Domain Path: /languages/
- * GitHub Branch: master
+ * GitHub Branch: beta
  * GitHub Plugin URI: https://github.com/valeriosouza/jetpack-whatsapp
 */
 
