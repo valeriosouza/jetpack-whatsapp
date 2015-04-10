@@ -1,7 +1,7 @@
-=== Jetpack WhatsApp ===
+=== WhatsApp Sharing Button for Jetpack ===
 Contributors: valeriosza
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P5QTGDB64SU8E&lc=US&item_name=WordPress%20Plugins&no_note=0&cn=Adicionar%20instru%c3%a7%c3%b5es%20especiais%20para%20o%20vendedor%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp
+Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
 Requires at least: 3.8
 Tested up to: 4.2
 Stable tag: 1.0.0
@@ -64,8 +64,8 @@ The icon of WhatsApp only appears on smartphones and tablets devices.
 
 == License ==
 
-Jetpack WhatsApp is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+WhatsApp Sharing Button for Jetpack is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Jetpack WhatsApp is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+WhatsApp Sharing Button for Jetpack is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with Post Notification by Email. If not, see <http://www.gnu.org/licenses/>.

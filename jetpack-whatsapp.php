@@ -1,6 +1,6 @@
 <?php
 /*
- * Plugin Name: Jetpack WhatsApp
+ * Plugin Name: WhatsApp Sharing Button for Jetpack
  * Plugin URI: http://wordpress.org/plugins/whatsapp-jetpack-button/
  * Description: Add WhatsApp button to Jetpack Sharing
  * Version: 1.0.0
