@@ -71,7 +71,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		parent::process_request( $post, $post_data );
 
 		print_r($whatsapp_url);
-		/*die();*/
+		die();
 		// Redirect to WhatsApp
 		wp_redirect( $whatsapp_url );
 		die();
