@@ -39,7 +39,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		if ( wp_is_mobile() ) {
 			if( $this->smart )
 				return sprintf(
-					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s" class="share-whatsapp %s" title="%s"></a></div>',
+					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s:%20%s%20-%20%s" class="share-whatsapp %s" title="%s"></a></div>',
 					__('Read this','jetpack-whatsapp'),
 					rawurlencode( $this->get_share_title( $post->ID ) ),
 					rawurlencode( $this->get_share_url( $post->ID ) ),
@@ -59,7 +59,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function process_request( $post, array $post_data ) {
-		$whatsapp_url = 'whatsapp://send?text='.rawurlencode(__('Read this','jetpack-whatsapp')).':%20'.rawurlencode( $this->get_share_title( $post->ID ) ).'%20-%20'.rawurlencode( $this->get_share_url( $post->ID ) ).'';
+		$whatsapp_url = 'whatsapp://send?text='.rawurlencode(__('Read this','jetpack-whatsapp').':%20'.$this->get_share_title( $post->ID ).'%20-%20'.$this->get_share_url( $post->ID ) ).'';
 
 		// Record stats
 		parent::process_request( $post, $post_data );
