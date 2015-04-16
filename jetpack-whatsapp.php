@@ -96,7 +96,7 @@ class Jetpack_Whatsapp_Pack {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a href="%s">%s</a>',
-				esc_url('https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=P5QTGDB64SU8E&lc=US&item_name=WordPress%20Plugins&no_note=0&cn=Adicionar%20instru%c3%a7%c3%b5es%20especiais%20para%20o%20vendedor%3a&no_shipping=1&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted'),
+				esc_url('http://valeriosouza.com.br/en/donate/'),
 				__( 'Donate', 'jetpack-whatsapp' )
 			);
 		}
