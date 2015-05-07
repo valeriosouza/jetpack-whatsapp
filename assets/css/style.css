@@ -27,9 +27,9 @@ li.service.share-whatsapp span:before {
 /* Icon only */
 .sd-social-icon .sd-content ul li[class*="share-"].share-whatsapp a.sd-button {
 	background-color:#00b900;
-	background-image:url("images/shape-white.png");
-	background-image:image-set(url("images/shape-white.png") 1x, url("images/shape-white@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/shape-white.png") 1x, url("images/shape-white@2x.png") 2x);
+	background-image:url("../images/shape-white.png");
+	background-image:image-set(url("../images/shape-white.png") 1x, url("../images/shape-white@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/shape-white.png") 1x, url("../images/shape-white@2x.png") 2x);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:20px 20px;
@@ -39,9 +39,9 @@ li.service.share-whatsapp span:before {
 .preview-whatsapp .option-smart-on {
 	height:20px;
 	width: 78px;
-	background-image: url("images/rectangle-en.png");
-	background-image:image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
+	background-image: url("../images/rectangle-en.png");
+	background-image:image-set(url("../images/rectangle-en.png") 1x, url("../images/rectangle-en@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/rectangle-en.png") 1x, url("../images/rectangle-en@2x.png") 2x);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: 78px 20px;
@@ -61,24 +61,24 @@ li.service.share-whatsapp span:before {
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.en {
 	width: 68px;
-	background-image: url("images/rectangle-en.png");
-	background-image:image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/rectangle-en.png") 1x, url("images/rectangle-en@2x.png") 2x);
+	background-image: url("../images/rectangle-en.png");
+	background-image:image-set(url("../images/rectangle-en.png") 1x, url("../images/rectangle-en@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/rectangle-en.png") 1x, url("../images/rectangle-en@2x.png") 2x);
 	background-size: 68px 20px;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.ja {
 	width: 68px;
-	background-image: url("images/rectangle-ja.png");
-	background-image:image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/rectangle-ja.png") 1x, url("images/rectangle-ja@2x.png") 2x);
+	background-image: url("../images/rectangle-ja.png");
+	background-image:image-set(url("../images/rectangle-ja.png") 1x, url("../images/rectangle-ja@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/rectangle-ja.png") 1x, url("../images/rectangle-ja@2x.png") 2x);
 	background-size: 68px 20px;
 }
 
 .sd-social-official .sd-content li.share-whatsapp .whatsapp_button a.zh-hant {
 	width: 68px;
-	background-image: url("images/rectangle-zh-hant.png");
-	background-image:image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/rectangle-zh-hant.png") 1x, url("images/rectangle-zh-hant@2x.png") 2x);
+	background-image: url("../images/rectangle-zh-hant.png");
+	background-image:image-set(url("../images/rectangle-zh-hant.png") 1x, url("../images/rectangle-zh-hant@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/rectangle-zh-hant.png") 1x, url("../images/rectangle-zh-hant@2x.png") 2x);
 	background-size: 68px 20px;
 }
