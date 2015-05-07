@@ -69,24 +69,23 @@ class Jetpack_Whatsapp_Pack {
 		if( !Jetpack::is_module_active('sharedaddy') ) {
 			return;
 		}
-		wp_enqueue_script( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'count.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
-		wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'style.css', array(), jetwhats__VERSION );
+		wp_enqueue_script( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/js/main.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
+		wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/css/style.css', array(), jetwhats__VERSION );
 	}
 
 	function admin_menu_assets( $hook ) {
 		if( $hook == 'settings_page_sharing' ) {
-			wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'style.css', array('sharing', 'sharing-admin'), jetwhats__VERSION );
+			wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/css/style.css', array('sharing', 'sharing-admin'), jetwhats__VERSION );
 		}
 	}
 
 	function require_services() {
 		if( class_exists('Jetpack') ) {
-			require_once( jetwhats__PLUGIN_DIR . 'class.whatsapp-service.php' );
+			require_once( jetwhats__PLUGIN_DIR . 'includes/class.whatsapp-service.php' );
 		}
 	}
 
 	static function plugin_textdomain() {
-		//load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( jetwhats__PLUGIN_FILE ) ) . '/languages/' );
 		$locale = get_locale();
 
 		load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );

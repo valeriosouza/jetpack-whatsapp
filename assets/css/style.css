@@ -9,9 +9,9 @@
 .sd-social-icon-text .sd-content li.share-whatsapp a:before,
 li.service.share-whatsapp span:before {
 	content:" ";
-	background-image:url("images/shape.png");
-	background-image:image-set(url("images/shape.png") 1x, url("images/shape@2x.png") 2x);
-	background-image:-webkit-image-set(url("images/shape.png") 1x, url("images/shape@2x.png") 2x);
+	background-image:url("../images/shape.png");
+	background-image:image-set(url("../images/shape.png") 1x, url("../images/shape@2x.png") 2x);
+	background-image:-webkit-image-set(url("../images/shape.png") 1x, url("../images/shape@2x.png") 2x);
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size:16px 16px;

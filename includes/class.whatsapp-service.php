@@ -31,7 +31,7 @@ class jetwhats_Sharing_Service {
 	}
 
 	function add_sharing_services( $services ) {
-		include_once jetwhats__PLUGIN_DIR . 'class.whatsapp-source.php';
+		include_once jetwhats__PLUGIN_DIR . 'includes/class.whatsapp-source.php';
 
 		if( !array_key_exists( 'whatsapp', $services ) ) {
 			$services['whatsapp'] = 'jetwhats_Share_WhatsApp';

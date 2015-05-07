@@ -35,8 +35,9 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function get_display( $post ) {
+		include_once jetwhats__PLUGIN_DIR . 'includes/class.mobile.php';
 		$locale = $this->guess_locale_from_lang( get_locale() );
-		if ( wp_is_mobile() ) {
+		if ( wp_is_mobile() and $iOS or $Android ) {
 			if( $this->smart )
 				return sprintf(
 					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s:%20%s%20-%20%s" class="share-whatsapp %s" title="%s"></a></div>',
