@@ -46,6 +46,9 @@ Verify that the Jetpack is enabled and activated Sharing module.
 = I do not see the button on my page, though I see other social networks. =
 The icon of WhatsApp only appears on smartphones and tablets devices.
 
+= It is not working on Windows Phone. =
+For some reason, we do not know or WhatsApp application, or Windows Phone, the button does not work and remove these devices.
+
 == Screenshots ==
 
 1. Option in admin.
@@ -54,10 +57,16 @@ The icon of WhatsApp only appears on smartphones and tablets devices.
 
 == Changelog ==
 
+= 1.0.1 =
+* Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices
+
 = 1.0.0 =
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices
 
 = 1.0.0 =
 * Initial Beta Release
