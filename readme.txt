@@ -4,7 +4,7 @@ Donate link: http://valeriosouza.com.br/en/donate/
 Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -57,6 +57,9 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 == Changelog ==
 
+= 1.0.2 =
+* Fixed bug share
+
 = 1.0.1 =
 * Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices
 
@@ -64,6 +67,9 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Fixed bug share
 
 = 1.0.1 =
 * Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices

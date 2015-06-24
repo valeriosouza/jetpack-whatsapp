@@ -40,7 +40,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		if ( wp_is_mobile() and $iOS or $Android ) {
 			if( $this->smart )
 				return sprintf(
-					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s:%20%s%20-%20%s" class="share-whatsapp %s" title="%s"></a></div>',
+					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s:%s-%s" class="share-whatsapp %s" title="%s"></a></div>',
 					__('Read this','jetpack-whatsapp'),
 					rawurlencode( $this->get_share_title( $post->ID ) ),
 					rawurlencode( $this->get_share_url( $post->ID ) ),
