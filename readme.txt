@@ -59,6 +59,7 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 = 1.0.2 =
 * Fixed bug share
+* Add news translations
 
 = 1.0.1 =
 * Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices
@@ -70,6 +71,7 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 = 1.0.2 =
 * Fixed bug share
+* Add news translations
 
 = 1.0.1 =
 * Due to a problem in WhatsApp or Windows Phone, the button does not work on these devices. Removed button on these devices
