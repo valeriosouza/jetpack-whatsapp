@@ -23,6 +23,28 @@ if( version_compare( get_bloginfo('version'), '3.8', '<' ) ) {
 	deactivate_plugins( __FILE__ );
 }
 
+add_action( 'admin_init', 'jw_check_dependencies' );
+
+//Check if jetpack is active.
+function jw_check_dependencies() {
+	if ( ! is_plugin_active( 'jetpack/jetpack.php' ) ) {
+		add_action( 'admin_notices', 'jw_dependencies_notice' );
+		deactivate_plugins( __FILE__ );
+
+		//I used it to not appear "plugin active" message! We can discuss a better way to do this.
+		unset( $_GET['activate'] );
+	}
+}
+
+//Show error notice if jetpack is NOT active.
+function jw_dependencies_notice() {
+    ?>
+    <div class="error">
+        <p><strong><?php _e( 'Jetpack Whatsapp has NOT been activated! You need to install and activate Jetpack plugin first.', 'jetpack-whatsapp' ); ?></strong></p>
+    </div>
+    <?php
+}
+
 define( 'jetwhats__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jetwhats__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jetwhats__PLUGIN_FILE', __FILE__ );
