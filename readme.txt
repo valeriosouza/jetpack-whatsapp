@@ -19,6 +19,12 @@ Don't forget to install Jetpack, and read [FAQ](https://wordpress.org/plugins/wh
 [Jetpack](http://jetpack.me) is awesome! It's used globally. But they can't cover WhatsApp.
 This supplies additional Jetpack sharing WhatsApp Button for your website.
 
+= Heads up: =
+
+Read the [FAQ](https://wordpress.org/plugins/whatsapp-jetpack-button/faq/) before use.
+
+Want to help? Use the [support](https://wordpress.org/support/plugin/whatsapp-jetpack-button)
+
 = Want to help? =
 
 If you can translate, help in https://www.transifex.com/projects/p/jetpack-whatsapp/ in Transifex.
@@ -27,7 +33,7 @@ Known to develop, help in https://github.com/valeriosouza/jetpack-whatsapp
 
 Have suggestions for new features? https://github.com/valeriosouza/jetpack-whatsapp/issues/new
 
-Want to keep up with the latest news from this plugin? Follow Twitter [@valeriosza](https://twitter.com/valeriosza)
+Want to keep up with the latest news from this plugin? Like Facebook [https://www.facebook.com/whatsappjetpackbutton](https://www.facebook.com/whatsappjetpackbutton?fref=ts)
 
 == Installation ==
 
@@ -57,6 +63,12 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 == Changelog ==
 
+= 1.1 =
+
+* Fixed errors in URL
+* Add url Google Analytics
+* Add news translations
+
 = 1.0.3 =
 * Fixed bug show in one post
 * Add news translations
@@ -72,6 +84,12 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.1 - 18/09/2015 =
+
+* Fixed errors in URL
+* Add url Google Analytics
+* Add news translations
 
 = 1.0.3 =
 * Fixed bug show in one post

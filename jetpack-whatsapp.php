@@ -40,7 +40,7 @@ function jw_check_dependencies() {
 function jw_dependencies_notice() {
     ?>
     <div class="error">
-        <p><strong><?php _e( 'Jetpack Whatsapp has NOT been activated! You need to install and activate Jetpack plugin first.', 'jetpack-whatsapp' ); ?></strong></p>
+        <p><strong><?php _e( 'Jetpack has NOT been activated! You need to install and activate Jetpack plugin first.', 'jetpack-whatsapp' ); ?></strong></p>
     </div>
     <?php
 }
