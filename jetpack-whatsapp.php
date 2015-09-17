@@ -1,10 +1,10 @@
 <?php
 /*
  * Plugin Name: WhatsApp Sharing Button for Jetpack
- * Plugin URI: http://wordpress.org/plugins/whatsapp-jetpack-button/
+ * Plugin URI: http://valeriosouza.com.br/portfolio/whatsapp-sharing-button-for-jetpack/
  * Description: Add WhatsApp button to Jetpack Sharing
- * Version: 1.0.3
- * Author: Valerio Souza
+ * Version: 1.1
+ * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
  * Text Domain: jetpack-whatsapp
