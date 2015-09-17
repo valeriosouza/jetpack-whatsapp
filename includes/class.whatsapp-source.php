@@ -41,7 +41,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 			//if ($iOS || $Android ) {
 				if( $this->smart )
 					return sprintf(
-						'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s" class="share-whatsapp %s" title="%s"></a></div>',
+						'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s%3Futm_source=jetpack-sharing%26utm_medium=whatsapp%26utm_campaign=mobile" class="share-whatsapp %s" title="%s"></a></div>',
 						__('Read this text','jetpack-whatsapp'),
 						rawurlencode( $this->get_share_title( $post->ID ) ),
 						rawurlencode( $this->get_share_url( $post->ID ) ),
@@ -65,10 +65,13 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		//$whatsapp_url = 'whatsapp://send?text='.rawurlencode(__('Read this','jetpack-whatsapp').': '.$this->get_share_title( $post->ID ).' - '.$this->get_share_url( $post->ID ) ).'';
 
 		$whatsapp_url = sprintf(
-			'whatsapp://send?text=%s: %s - %s',
-			__('Read this text','jetpack-whatsapp'),
+			'whatsapp://send?text=%s:%s%s%s%s%s',
+			rawurlencode( __('Read this text','jetpack-whatsapp') ),
+			rawurlencode(' '),
 			rawurlencode( $this->get_share_title( $post->ID ) ),
-			rawurlencode( $this->get_share_url( $post->ID ) )
+			rawurlencode(' - '),
+			rawurlencode( $this->get_share_url( $post->ID ) ),
+			rawurlencode('?utm_source=jetpack-sharing&utm_medium=whatsapp&utm_campaign=mobile')
 		);
 		// Record stats
 		parent::process_request( $post, $post_data );
