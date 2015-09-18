@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack WhatsApp\n"
-"POT-Creation-Date: 2015-09-17 00:25-0300\n"
-"PO-Revision-Date: 2015-09-17 00:25-0300\n"
+"POT-Creation-Date: 2015-09-17 22:14-0300\n"
+"PO-Revision-Date: 2015-09-17 22:14-0300\n"
 "Last-Translator: Valerio <valeriosza@gmail.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -22,8 +22,8 @@ msgid "WhatsApp"
 msgstr ""
 
 #: ../includes/class.whatsapp-source.php:45
-#: ../includes/class.whatsapp-source.php:69
-msgid "Read this text"
+#: ../includes/class.whatsapp-source.php:73
+msgid "Look this"
 msgstr ""
 
 #: ../includes/class.whatsapp-source.php:52
@@ -32,8 +32,8 @@ msgstr ""
 
 #: ../jetpack-whatsapp.php:43
 msgid ""
-"Jetpack has NOT been activated! You need to install and activate Jetpack "
-"plugin first."
+"Jetpack has NOT been activated! You need to install and activate the Jetpack "
+"plugin to work sharing with WhatsApp."
 msgstr ""
 
 #: ../jetpack-whatsapp.php:120

@@ -40,7 +40,7 @@ function jw_check_dependencies() {
 function jw_dependencies_notice() {
     ?>
     <div class="error">
-        <p><strong><?php _e( 'Jetpack has NOT been activated! You need to install and activate Jetpack plugin first.', 'jetpack-whatsapp' ); ?></strong></p>
+        <p><strong><?php _e( 'Jetpack has NOT been activated! You need to install and activate the Jetpack plugin to work sharing with WhatsApp.', 'jetpack-whatsapp' ); ?></strong></p>
     </div>
     <?php
 }
@@ -48,7 +48,7 @@ function jw_dependencies_notice() {
 define( 'jetwhats__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jetwhats__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jetwhats__PLUGIN_FILE', __FILE__ );
-define( 'jetwhats__VERSION',     '1.0.3' );
+define( 'jetwhats__VERSION',     '1.1' );
 
 add_action( 'init', array( 'Jetpack_Whatsapp_Pack', 'init' ) );
 
@@ -116,7 +116,7 @@ class Jetpack_Whatsapp_Pack {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a href="%s">%s</a>',
-				esc_url('http://valeriosouza.com.br/en/donate/'),
+				esc_url('http://wordlab.com.br/donate/'),
 				__( 'Donate', 'jetpack-whatsapp' )
 			);
 		}
