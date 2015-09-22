@@ -4,33 +4,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WhatsApp Sharing Button for Jetpack\n"
-"POT-Creation-Date: 2015-04-10 09:34-0300\n"
-"PO-Revision-Date: 2015-06-24 03:40+0000\n"
+"POT-Creation-Date: 2015-09-21 22:32-0300\n"
+"PO-Revision-Date: 2015-09-22 01:39+0000\n"
 "Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/jetpack-whatsapp/language/el/)\n"
+"Language-Team: Greek (http://www.transifex.com/valeriosouza/jetpack-whatsapp/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: __;_x;_e\n"
 "X-Poedit-SearchPath-0: ..\n"
 "X-Poedit-SearchPath-1: .\n"
 
-#: ../class.whatsapp-source.php:20 ../class.whatsapp-source.php:50
+#: ../includes/class.whatsapp-source.php:20
+#: ../includes/class.whatsapp-source.php:52
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: ../class.whatsapp-source.php:43 ../class.whatsapp-source.php:62
-msgid "Read this"
-msgstr "Διάβαστε αυτό"
+#: ../includes/class.whatsapp-source.php:45
+#: ../includes/class.whatsapp-source.php:73
+msgid "Look this"
+msgstr ""
 
-#: ../class.whatsapp-source.php:50
+#: ../includes/class.whatsapp-source.php:52
 msgid "Click to share on WhatsApp"
 msgstr "Κάντε κλικ για να το μοιραστείτε στο WhatsApp"
 
-#: ../jetpack-whatsapp.php:100
+#: ../jetpack-whatsapp.php:43
+msgid ""
+"Jetpack has NOT been activated! You need to install and activate the Jetpack"
+" plugin to work sharing with WhatsApp."
+msgstr ""
+
+#: ../jetpack-whatsapp.php:121
 msgid "Donate"
 msgstr "Δωρεά"
+
+#: ../jetpack-whatsapp.php:132
+msgid "More add-ons"
+msgstr ""

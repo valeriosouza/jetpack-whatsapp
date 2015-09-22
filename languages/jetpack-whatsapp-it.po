@@ -1,17 +1,17 @@
 # 
 # Translators:
-# Fernando San Eustaquio Sánchez <fsaneus@gmail.com>, 2015
+# Andrea <n_drew@live.it>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: WhatsApp Sharing Button for Jetpack\n"
 "POT-Creation-Date: 2015-09-21 22:32-0300\n"
 "PO-Revision-Date: 2015-09-22 01:39+0000\n"
 "Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
-"Language-Team: Spanish (Spain) (http://www.transifex.com/valeriosouza/jetpack-whatsapp/language/es_ES/)\n"
+"Language-Team: Italian (http://www.transifex.com/valeriosouza/jetpack-whatsapp/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.7.5\n"
 "X-Poedit-Basepath: .\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../includes/class.whatsapp-source.php:52
 msgid "Click to share on WhatsApp"
-msgstr "Pulsa para compartir en WhatsApp"
+msgstr "Clicca per condividere su WhatsApp"
 
 #: ../jetpack-whatsapp.php:43
 msgid ""
