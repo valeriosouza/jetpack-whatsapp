@@ -79,7 +79,8 @@ class Jetpack_Whatsapp_Pack {
 		} else {
 			add_action( 'plugins_loaded', array( &$this, 'require_services' ) );
 		}
-		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_meta' ), 10, 2 );
+		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_donate' ), 10, 2 );
+		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_more' ), 10, 2 );
 	}
 
 	function register_assets() {
@@ -112,12 +113,23 @@ class Jetpack_Whatsapp_Pack {
 		load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
-	function plugin_row_meta( $links, $file ) {
+	function plugin_row_donate( $links, $file ) {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
-				'<a href="%s">%s</a>',
+				'<a target="_blank" href="%s">%s</a>',
 				esc_url('http://wordlab.com.br/donate/'),
 				__( 'Donate', 'jetpack-whatsapp' )
+			);
+		}
+		return $links;
+	}
+
+	function plugin_row_more( $links, $file ) {
+		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
+			$links[] = sprintf(
+				'<a target="_blank" href="%s">%s</a>',
+				esc_url('http://valeriosouza.com.br/project-tag/jetpack-addons/'),
+				__( 'More add-ons', 'jetpack-whatsapp' )
 			);
 		}
 		return $links;

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack WhatsApp\n"
-"POT-Creation-Date: 2015-09-17 22:14-0300\n"
-"PO-Revision-Date: 2015-09-17 22:14-0300\n"
+"POT-Creation-Date: 2015-09-21 22:32-0300\n"
+"PO-Revision-Date: 2015-09-21 22:32-0300\n"
 "Last-Translator: Valerio <valeriosza@gmail.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -36,6 +36,10 @@ msgid ""
 "plugin to work sharing with WhatsApp."
 msgstr ""
 
-#: ../jetpack-whatsapp.php:120
+#: ../jetpack-whatsapp.php:121
 msgid "Donate"
+msgstr ""
+
+#: ../jetpack-whatsapp.php:132
+msgid "More add-ons"
 msgstr ""
