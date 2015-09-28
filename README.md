@@ -1,4 +1,4 @@
-# WhatsApp Sharing Button for Jetpack #
+# WhatsApp Sharing Button for Jetpack [![Dockunit Status](https://dockunit.io/svg/valeriosouza/jetpack-whatsapp?master)](https://dockunit.io/projects/valeriosouza/jetpack-whatsapp#master)
 **Contributors:** valeriosza, wordlab
   
 **Donate link:** http://wordlab.com.br/donate/
