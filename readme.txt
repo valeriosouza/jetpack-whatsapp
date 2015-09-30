@@ -1,10 +1,10 @@
 === WhatsApp Sharing Button for Jetpack ===
-Contributors: valeriosza
-Donate link: http://valeriosouza.com.br/en/donate/
-Tags: Jetpack, social, sharing, share, SNS, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
+Contributors: valeriosza, wordlab
+Donate link: http://wordlab.com.br/donate/
+Tags: Jetpack, social, sharing, share, SNS,WhatsApp, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
 Requires at least: 3.8
-Tested up to: 4.2
-Stable tag: 1.0.2
+Tested up to: 4.3.1
+Stable tag: 1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -16,8 +16,14 @@ Add WhatsApp button to Jetpack Sharing
 
 Don't forget to install Jetpack, and read [FAQ](https://wordpress.org/plugins/whatsapp-jetpack-button/faq/)!
 
-[Jetpack](http://jetpack.me) is awesome! It's used globally. But they can't cover WhatsApp. 
+[Jetpack](http://jetpack.me) is awesome! It's used globally. But they can't cover WhatsApp.
 This supplies additional Jetpack sharing WhatsApp Button for your website.
+
+= Heads up: =
+
+Read the [FAQ](https://wordpress.org/plugins/whatsapp-jetpack-button/faq/) before use.
+
+Want to help? Use the [support](https://wordpress.org/support/plugin/whatsapp-jetpack-button)
 
 = Want to help? =
 
@@ -27,7 +33,9 @@ Known to develop, help in https://github.com/valeriosouza/jetpack-whatsapp
 
 Have suggestions for new features? https://github.com/valeriosouza/jetpack-whatsapp/issues/new
 
-Want to keep up with the latest news from this plugin? Follow Twitter [@valeriosza](https://twitter.com/valeriosza)
+Want to be a beta tester of the new versions? https://www.facebook.com/groups/jetpackaddonsbetagroup/
+
+Want to keep up with the latest news from this plugin? Like Facebook [https://www.facebook.com/JetpackAddons](https://www.facebook.com/JetpackAddons)
 
 == Installation ==
 
@@ -47,7 +55,7 @@ Verify that the Jetpack is enabled and activated Sharing module.
 The icon of WhatsApp only appears on smartphones and tablets devices.
 
 = It is not working on Windows Phone. =
-For some reason, we do not know or WhatsApp application, or Windows Phone, the button does not work and remove these devices.
+For some reason, we do not know or WhatsApp application, or Windows Phone, the button does not work these devices.
 
 == Screenshots ==
 
@@ -56,6 +64,16 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 2. Show in your page.
 
 == Changelog ==
+
+= 1.1 =
+
+* Fixed errors in URL
+* Add url Google Analytics
+* Add news translations
+
+= 1.0.3 =
+* Fixed bug show in one post
+* Add news translations
 
 = 1.0.2 =
 * Fixed bug share
@@ -68,6 +86,16 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.1 - 18/09/2015 =
+
+* Fixed errors in URL
+* Add url Google Analytics
+* Add news translations
+
+= 1.0.3 =
+* Fixed bug show in one post
+* Add news translations
 
 = 1.0.2 =
 * Fixed bug share
