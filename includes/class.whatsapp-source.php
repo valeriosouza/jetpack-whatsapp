@@ -35,9 +35,9 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function get_display( $post ) {
-		include_once jetwhats__PLUGIN_DIR . 'includes/class.mobile.php';
+		/*include_once jetwhats__PLUGIN_DIR . 'includes/class.mobile.php';*/
 		$locale = $this->guess_locale_from_lang( get_locale() );
-		if ( wp_is_mobile()) {
+		/*if ( wp_is_mobile()) {*/
 			//if ($iOS || $Android ) {
 				if( $this->smart )
 					return sprintf(
@@ -51,7 +51,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 				else
 					return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetpack-whatsapp' ), __( 'Click to share on WhatsApp', 'jetpack-whatsapp' ), 'share=whatsapp' );
 			//}
-		}
+		/*}*/
 	}
 
 	function display_header() {
