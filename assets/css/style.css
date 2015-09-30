@@ -2,6 +2,16 @@
 * 1.1 WhatsApp
 */
 
+@media screen and (min-width: 800px) {
+	a.share-whatsapp.sd-button.share-icon{
+		display: none!important;
+	}
+}
+
+.sd-content ul li.preview-item div.option.option-smart-off a {
+    display: inline-block!important;
+}
+
 /* Icon and Text */
 .sd-social-icon .sd-content ul li.share-whatsapp a:before,
 .sd-social-text .sd-content ul li.share-whatsapp a:before,
@@ -81,9 +91,4 @@ li.service.share-whatsapp span:before {
 	background-image:image-set(url("../images/rectangle-zh-hant.png") 1x, url("../images/rectangle-zh-hant@2x.png") 2x);
 	background-image:-webkit-image-set(url("../images/rectangle-zh-hant.png") 1x, url("../images/rectangle-zh-hant@2x.png") 2x);
 	background-size: 68px 20px;
-}
-@media screen and (min-width: 800px) {
-	a.share-whatsapp.sd-button.share-icon{
-		display: none!important;
-	}
 }

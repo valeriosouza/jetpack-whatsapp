@@ -41,7 +41,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 			//if ($iOS || $Android ) {
 				if( $this->smart )
 					return sprintf(
-						'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s%3Futm_source=jetpack-sharing%26utm_medium=whatsapp%26utm_campaign=mobile" class="share-whatsapp %s" title="%s"></a></div>',
+						'<div class="whatsapp_button" data-layout="button_count"><a href="whatsapp://send?text=%s: %s - %s%3Futm_source=jetpack-sharing%26utm_medium=whatsapp%26utm_campaign=mobile" class="share-whatsapp %s" title="%s"></a></div>',
 						__('Look this','jetpack-whatsapp'),
 						rawurlencode( $this->get_share_title( $post->ID ) ),
 						rawurlencode( $this->get_share_url( $post->ID ) ),
