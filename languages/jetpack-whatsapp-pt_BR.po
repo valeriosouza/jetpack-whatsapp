@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WhatsApp Sharing Button for Jetpack\n"
-"POT-Creation-Date: 2015-09-21 22:32-0300\n"
-"PO-Revision-Date: 2015-09-22 01:39+0000\n"
+"POT-Creation-Date: 2015-10-03 14:34-0300\n"
+"PO-Revision-Date: 2015-10-04 23:10+0000\n"
 "Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/valeriosouza/jetpack-whatsapp/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
@@ -20,16 +20,16 @@ msgstr ""
 "X-Poedit-SearchPath-1: .\n"
 
 #: ../includes/class.whatsapp-source.php:20
-#: ../includes/class.whatsapp-source.php:52
+#: ../includes/class.whatsapp-source.php:49
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: ../includes/class.whatsapp-source.php:45
-#: ../includes/class.whatsapp-source.php:73
-msgid "Look this"
-msgstr ""
+#: ../includes/class.whatsapp-source.php:42
+#: ../includes/class.whatsapp-source.php:68
+msgid "Look at this"
+msgstr "Veja Isso"
 
-#: ../includes/class.whatsapp-source.php:52
+#: ../includes/class.whatsapp-source.php:49
 msgid "Click to share on WhatsApp"
 msgstr "Clique para compartilhar no WhatsApp"
 
@@ -37,12 +37,20 @@ msgstr "Clique para compartilhar no WhatsApp"
 msgid ""
 "Jetpack has NOT been activated! You need to install and activate the Jetpack"
 " plugin to work sharing with WhatsApp."
-msgstr ""
+msgstr "Jetpack não está ativado! Você deve instalar e ativar o plugin Jetpack para conseguir usar o compartilhamento do WhatsApp"
 
-#: ../jetpack-whatsapp.php:121
+#: ../jetpack-whatsapp.php:124
 msgid "Donate"
 msgstr "Doar"
 
-#: ../jetpack-whatsapp.php:132
+#: ../jetpack-whatsapp.php:135
 msgid "More add-ons"
-msgstr ""
+msgstr "Outros Add-ons"
+
+#: ../jetpack-whatsapp.php:149
+#, php-format
+msgid ""
+"Like the plugin to share the WhatsApp Sharing Button for Jetpack? Develop "
+"free plugins takes work! Be my boss and make a <a target=\"_blank\" "
+"href=\"%1$s\">donation of any amount</a>. | <a href=\"%2$s\">Hide Notice</a>"
+msgstr "Gostou do plugin WhatsApp Sharing Button for Jetpack? Desenvolver plugins gratuitos dá trabalho! Seja meu chefe e <a target=\"_blank\" href=\"%1$s\">faça uma doação de qualquer valor</a>. | <a href=\"%2$s\">Esconder Aviso</a>"
