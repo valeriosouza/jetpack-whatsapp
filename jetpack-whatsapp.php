@@ -3,7 +3,7 @@
  * Plugin Name: WhatsApp Sharing Button for Jetpack
  * Plugin URI: http://valeriosouza.com.br/portfolio/whatsapp-sharing-button-for-jetpack/?utm_source=plugin&utm_medium=plugin-url&utm_campaign=jetpack-whatsapp
  * Description: Add WhatsApp button to Jetpack Sharing
- * Version: 1.1.1
+ * Version: 1.1.2
  * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
@@ -48,7 +48,7 @@ function jw_dependencies_notice() {
 define( 'jetwhats__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jetwhats__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jetwhats__PLUGIN_FILE', __FILE__ );
-define( 'jetwhats__VERSION',     '1.1.1' );
+define( 'jetwhats__VERSION',     '1.1.2' );
 
 add_action( 'init', array( 'Jetpack_Whatsapp_Pack', 'init' ) );
 
@@ -83,7 +83,6 @@ class Jetpack_Whatsapp_Pack {
 		}
 		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_donate' ), 10, 2 );
 		add_filter( 'plugin_row_meta', array( &$this, 'plugin_row_more' ), 10, 2 );
-		add_action( 'admin_notices', array( &$this, 'my_admin_notice' ), 10, 2 );
 	}
 
 	function register_assets() {
