@@ -65,7 +65,7 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 == Changelog ==
 
-= 1.1.2 - 06/10/2015 =
+= 1.1.3 - 06/10/2015 =
 
 * Fixed bugs in translate
 
@@ -100,7 +100,7 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 == Upgrade Notice ==
 
-= 1.1.2 - 06/10/2015 =
+= 1.1.3 - 06/10/2015 =
 
 * Fixed bugs in translate
 
