@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack WhatsApp\n"
-"POT-Creation-Date: 2015-10-05 21:08-0300\n"
-"PO-Revision-Date: 2015-10-05 21:08-0300\n"
+"POT-Creation-Date: 2015-10-05 21:35-0300\n"
+"PO-Revision-Date: 2015-10-05 21:35-0300\n"
 "Last-Translator: Valerio <valeriosza@gmail.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../jetpack-whatsapp.php:155
 msgid ""
-"Like the plugin to share the WhatsApp Sharing Button for Jetpack? Develop "
-"free plugins takes work! Be my boss and make a "
+"Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins "
+"takes work! Be my boss and make a "
 msgstr ""
 
 #: ../jetpack-whatsapp.php:155
