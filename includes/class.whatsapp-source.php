@@ -38,10 +38,11 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		$locale = $this->guess_locale_from_lang( get_locale() );
 				if( $this->smart )
 					return sprintf(
-						'<div class="whatsapp_button" data-layout="button_count"><a href="whatsapp://send?text=%s: %s - %s%3Futm_source=jetpack-sharing%26utm_medium=whatsapp%26utm_campaign=mobile" class="share-whatsapp %s" title="%s"></a></div>',
+						'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s%s" class="share-whatsapp %s" title="%s"></a></div>',
 						__('Look at this','jetpack-whatsapp'),
 						rawurlencode( $this->get_share_title( $post->ID ) ),
 						rawurlencode( $this->get_share_url( $post->ID ) ),
+						rawurlencode('?utm_source=jetpack-sharing&utm_medium=whatsapp&utm_campaign=mobile'),
 						esc_attr( $locale ),
 						esc_attr__( 'WhatsApp it!', 'jetpack-whatsapp' )
 					);
