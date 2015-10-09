@@ -1,13 +1,14 @@
-# 
+#
 # Translators:
 # Fernando San Eustaquio Sánchez <fsaneus@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: WhatsApp Sharing Button for Jetpack\n"
 "POT-Creation-Date: 2015-10-05 21:35-0300\n"
-"PO-Revision-Date: 2015-10-06 00:38+0000\n"
+"PO-Revision-Date: 2015-10-08 23:13-0300\n"
 "Last-Translator: Valério Souza <valeriosza@gmail.com>\n"
-"Language-Team: Spanish (Spain) (http://www.transifex.com/valeriosouza/jetpack-whatsapp/language/es_ES/)\n"
+"Language-Team: Spanish (Spain) (http://www.transifex.com/valeriosouza/"
+"jetpack-whatsapp/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,8 +36,8 @@ msgstr "Pulsa para compartir en WhatsApp"
 
 #: ../jetpack-whatsapp.php:43
 msgid ""
-"Jetpack has NOT been activated! You need to install and activate the Jetpack"
-" plugin to work sharing with WhatsApp."
+"Jetpack has NOT been activated! You need to install and activate the "
+"Jetpack plugin to work sharing with WhatsApp."
 msgstr ""
 
 #: ../jetpack-whatsapp.php:130
