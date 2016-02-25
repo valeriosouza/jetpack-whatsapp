@@ -7,7 +7,7 @@
  * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
- * Text Domain: jetpack-whatsapp
+ * Text Domain: whatsapp-jetpack-button
  * Domain Path: /languages/
  * GitHub Branch: beta
  * GitHub Plugin URI: https://github.com/valeriosouza/jetpack-whatsapp
@@ -40,7 +40,7 @@ function jw_check_dependencies() {
 function jw_dependencies_notice() {
     ?>
     <div class="error">
-        <p><strong><?php _e( 'Jetpack has NOT been activated! You need to install and activate the Jetpack plugin to work sharing with WhatsApp.', 'jetpack-whatsapp' ); ?></strong></p>
+        <p><strong><?php _e( 'Jetpack has NOT been activated! You need to install and activate the Jetpack plugin to work sharing with WhatsApp.', 'whatsapp-jetpack-button' ); ?></strong></p>
     </div>
     <?php
 }
@@ -119,7 +119,7 @@ class Jetpack_Whatsapp_Pack {
 	static function plugin_textdomain() {
 		$locale = get_locale();
 
-		load_plugin_textdomain( 'jetpack-whatsapp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'whatsapp-jetpack-button', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	function plugin_row_donate( $links, $file ) {
@@ -127,7 +127,7 @@ class Jetpack_Whatsapp_Pack {
 			$links[] = sprintf(
 				'<a target="_blank" href="%s" style="color:#ffa100;font-weight:bold;">%s</a>',
 				esc_url('http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate&utm_campaign=jetpack-whatsapp'),
-				__( 'Donate', 'jetpack-whatsapp' )
+				__( 'Donate', 'whatsapp-jetpack-button' )
 			);
 		}
 		return $links;
@@ -138,7 +138,7 @@ class Jetpack_Whatsapp_Pack {
 			$links[] = sprintf(
 				'<a target="_blank" href="%s" style="color:#ffa100;font-weight:bold;">%s</a>',
 				esc_url('http://valeriosouza.com.br/project-tag/jetpack-addons/?utm_source=plugin&utm_medium=more-addons&utm_campaign=jetpack-whatsapp'),
-				__( 'More add-ons', 'jetpack-whatsapp' )
+				__( 'More add-ons', 'whatsapp-jetpack-button' )
 			);
 		}
 		return $links;
@@ -152,7 +152,7 @@ class Jetpack_Whatsapp_Pack {
 	        /* Check that the user hasn't already clicked to ignore the message */
 		if ( ! get_user_meta($user_id, 'whatsapp_ignore_notice') ) {
 	        echo '<div class="updated"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>. | <a href="%s">%s</a>',__('Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'jetpack-whatsapp'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('donation of any amount', 'jetpack-whatsapp'), '?whatsapp_nag_ignore=0',__('This plugin does not deserve a donation', 'jetpack-whatsapp'));
+	        printf('%s<a target="_blank" href="%s">%s</a>. | <a href="%s">%s</a>',__('Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('donation of any amount', 'jetpack-whatsapp'), '?whatsapp_nag_ignore=0',__('This plugin does not deserve a donation', 'jetpack-whatsapp'));
 	        echo "</p></div>";
 		}
 	}

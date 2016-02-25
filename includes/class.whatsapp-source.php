@@ -17,7 +17,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 	}
 
 	function get_name() {
-		return __( 'WhatsApp', 'jetpack-whatsapp' );
+		return __( 'WhatsApp', 'whatsapp-jetpack-button' );
 	}
 
 	function has_custom_button_style() {
@@ -39,15 +39,15 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 			if( $this->smart )
 				return sprintf(
 					'<div class="whatsapp_button"><a href="whatsapp://send?text=%s: %s - %s%s" class="share-whatsapp %s" title="%s"></a></div>',
-					__('Look at this','jetpack-whatsapp'),
+					__('Look at this','whatsapp-jetpack-button'),
 					rawurlencode( $this->get_share_title( $post->ID ) ),
 					rawurlencode( $this->get_share_url( $post->ID ) ),
 					rawurlencode( '?utm_source=jetpack-sharing&utm_medium=whatsapp&utm_campaign=mobile' ),
 					esc_attr( $locale ),
-					esc_attr__( 'WhatsApp it!', 'jetpack-whatsapp' )
+					esc_attr__( 'WhatsApp it!', 'whatsapp-jetpack-button' )
 				);
 			else
-				return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'jetpack-whatsapp' ), __( 'Click to share on WhatsApp', 'jetpack-whatsapp' ), 'share=whatsapp' );
+				return $this->get_link( get_permalink( $post->ID ), _x( 'WhatsApp', 'share to', 'whatsapp-jetpack-button' ), __( 'Click to share on WhatsApp', 'whatsapp-jetpack-button' ), 'share=whatsapp' );
 	}
 
 	function display_header() {
@@ -66,7 +66,7 @@ class jetwhats_Share_WhatsApp extends Sharing_Source {
 		), $this->get_share_url( $post->ID ) );
 
 		$params = array(
-		    'text' => __( 'Look at this', 'jetpack-whatsapp' ) . ': ' . $this->get_share_title( $post->ID ).' - '.$url,
+		    'text' => __( 'Look at this', 'whatsapp-jetpack-button' ) . ': ' . $this->get_share_title( $post->ID ).' - '.$url,
 		);
 
 		$whatsapp_url = 'whatsapp://send?' . http_build_query( $params );
