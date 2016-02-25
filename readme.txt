@@ -4,7 +4,7 @@ Donate link: http://wordlab.com.br/donate/
 Tags: Jetpack, social, sharing, share, SNS,WhatsApp, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
 Requires at least: 3.8
 Tested up to: 4.3.1
-Stable tag: 1.1.3
+Stable tag: 1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -27,7 +27,7 @@ Want to help? Use the [support](https://wordpress.org/support/plugin/whatsapp-je
 
 = Want to help? =
 
-If you can translate, help in https://www.transifex.com/projects/p/jetpack-whatsapp/ in Transifex.
+If you can translate, help in https://translate.wordpress.org/projects/wp-plugins/whatsapp-jetpack-button.
 
 Known to develop, help in https://github.com/valeriosouza/jetpack-whatsapp
 
@@ -54,6 +54,12 @@ Verify that the Jetpack is enabled and activated Sharing module.
 = I do not see the button on my page, though I see other social networks. =
 The icon of WhatsApp only appears on smartphones and tablets devices.
 
+= There is already WhatsApp Web, why not release? =
+Our plugin does not interfere in the operation of browsers and operating systems. Even turning on, the icon will not work.
+
+= I am Noob, and I want to show the button. =
+The button is hidden via CSS, remove the CSS of your theme the `display:none`
+
 = It is not working on Windows Phone. =
 For some reason, we do not know or WhatsApp application, or Windows Phone, the button does not work these devices.
 
@@ -64,6 +70,10 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 2. Show in your page.
 
 == Changelog ==
+
+= 1.2 - 25/01/2016 =
+
+* Update Translate
 
 = 1.1.3 - 06/10/2015 =
 
@@ -99,6 +109,10 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.2 - 25/01/2016 =
+
+* Update Translate
 
 = 1.1.3 - 06/10/2015 =
 
