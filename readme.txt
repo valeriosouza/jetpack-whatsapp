@@ -37,6 +37,12 @@ Want to be a beta tester of the new versions? https://www.facebook.com/groups/je
 
 Want to keep up with the latest news from this plugin? Like Facebook [https://www.facebook.com/JetpackAddons](https://www.facebook.com/JetpackAddons)
 
+= Reviews =
+
+http://wptavern.com/new-plugin-adds-a-whatsapp-button-to-jetpacks-sharing-module
+
+http://www.total-photoshop.com/2015/06/condividere-in-whatsapp-i-contenuti-wordpress/
+
 == Installation ==
 
 1. Upload the `jetpack-whatsapp` folder to the `/wp-content/plugins/` directory.
