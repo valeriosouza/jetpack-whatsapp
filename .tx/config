@@ -5,4 +5,4 @@ file_filter = languages/jetpack-whatsapp-<lang>.po
 source_file = languages/jetpack-whatsapp.pot
 source_lang = en_US
 type = POT
-minimum_perc = 30
+minimum_perc = 10

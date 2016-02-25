@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack WhatsApp\n"
-"POT-Creation-Date: 2015-10-05 21:35-0300\n"
-"PO-Revision-Date: 2015-10-05 21:35-0300\n"
-"Last-Translator: Valerio <valeriosza@gmail.com>\n"
+"POT-Creation-Date: 2016-02-25 11:16-0300\n"
+"PO-Revision-Date: 2016-02-25 11:17-0300\n"
+"Last-Translator: Valério Souza <eu@valeriosouza.com.br>\n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.6.10\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_x;_e\n"
@@ -17,16 +17,16 @@ msgstr ""
 "X-Poedit-SearchPath-1: .\n"
 
 #: ../includes/class.whatsapp-source.php:20
-#: ../includes/class.whatsapp-source.php:49
+#: ../includes/class.whatsapp-source.php:50
 msgid "WhatsApp"
 msgstr ""
 
 #: ../includes/class.whatsapp-source.php:42
-#: ../includes/class.whatsapp-source.php:68
+#: ../includes/class.whatsapp-source.php:69
 msgid "Look at this"
 msgstr ""
 
-#: ../includes/class.whatsapp-source.php:49
+#: ../includes/class.whatsapp-source.php:50
 msgid "Click to share on WhatsApp"
 msgstr ""
 
@@ -36,24 +36,28 @@ msgid ""
 "plugin to work sharing with WhatsApp."
 msgstr ""
 
-#: ../jetpack-whatsapp.php:130
+#: ../jetpack-whatsapp.php:128
 msgid "Donate"
 msgstr ""
 
-#: ../jetpack-whatsapp.php:141
+#: ../jetpack-whatsapp.php:139
 msgid "More add-ons"
 msgstr ""
 
-#: ../jetpack-whatsapp.php:155
+#: ../jetpack-whatsapp.php:149
 msgid ""
 "Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins "
 "takes work! Be my boss and make a "
 msgstr ""
 
-#: ../jetpack-whatsapp.php:155
+#: ../jetpack-whatsapp.php:149
 msgid "donation of any amount"
 msgstr ""
 
 #: ../jetpack-whatsapp.php:155
-msgid "This plugin does not deserve a donation"
+msgid "Button does not appear on the front end? "
+msgstr ""
+
+#: ../jetpack-whatsapp.php:155
+msgid "Please, read the FAQ"
 msgstr ""
