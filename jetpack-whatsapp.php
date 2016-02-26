@@ -166,13 +166,13 @@ class Jetpack_Whatsapp_Pack {
 
 	function plugin_donate_notice() {
 	        echo '<div class="notice notice-info notice-donate is-dismissible"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('donation of any amount', 'jetpack-whatsapp'));
+	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('donation of any amount', 'whatsapp-jetpack-button'));
 	        echo "</p></div>";
 	}
 
 	function plugin_faq_notice() {
 	        echo '<div class="notice notice-info notice-faq is-dismissible"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Button does not appear on the front end? ', 'whatsapp-jetpack-button'), 'https://wordpress.org/plugins/whatsapp-jetpack-button/faq/', __('Please, read the FAQ', 'jetpack-whatsapp'));
+	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Button does not appear on the front end? ', 'whatsapp-jetpack-button'), 'https://wordpress.org/plugins/whatsapp-jetpack-button/faq/', __('Please, read the FAQ', 'whatsapp-jetpack-button'));
 	        echo "</p></div>";
 	}
 
