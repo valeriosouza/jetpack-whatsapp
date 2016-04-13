@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Jetpack WhatsApp\n"
-"POT-Creation-Date: 2016-02-25 11:16-0300\n"
-"PO-Revision-Date: 2016-02-25 11:17-0300\n"
+"POT-Creation-Date: 2016-04-13 11:20-0300\n"
+"PO-Revision-Date: 2016-04-13 11:20-0300\n"
 "Last-Translator: Valério Souza <eu@valeriosouza.com.br>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -17,16 +17,17 @@ msgstr ""
 "X-Poedit-SearchPath-1: .\n"
 
 #: ../includes/class.whatsapp-source.php:20
-#: ../includes/class.whatsapp-source.php:50
+#: ../includes/class.whatsapp-source.php:61
 msgid "WhatsApp"
 msgstr ""
 
-#: ../includes/class.whatsapp-source.php:42
-#: ../includes/class.whatsapp-source.php:69
+#: ../includes/class.whatsapp-source.php:43
+#: ../includes/class.whatsapp-source.php:53
+#: ../includes/class.whatsapp-source.php:83
 msgid "Look at this"
 msgstr ""
 
-#: ../includes/class.whatsapp-source.php:50
+#: ../includes/class.whatsapp-source.php:61
 msgid "Click to share on WhatsApp"
 msgstr ""
 
@@ -36,28 +37,28 @@ msgid ""
 "plugin to work sharing with WhatsApp."
 msgstr ""
 
-#: ../jetpack-whatsapp.php:128
-msgid "Donate"
+#: ../jetpack-whatsapp.php:148
+msgid "Get Pro"
 msgstr ""
 
-#: ../jetpack-whatsapp.php:139
+#: ../jetpack-whatsapp.php:159
 msgid "More add-ons"
 msgstr ""
 
-#: ../jetpack-whatsapp.php:149
+#: ../jetpack-whatsapp.php:169
 msgid ""
-"Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins "
-"takes work! Be my boss and make a "
+"Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove "
+"advertisements and get more control in your Google Analytics. "
 msgstr ""
 
-#: ../jetpack-whatsapp.php:149
-msgid "donation of any amount"
+#: ../jetpack-whatsapp.php:169
+msgid "Read More"
 msgstr ""
 
-#: ../jetpack-whatsapp.php:155
+#: ../jetpack-whatsapp.php:175
 msgid "Button does not appear on the front end? "
 msgstr ""
 
-#: ../jetpack-whatsapp.php:155
+#: ../jetpack-whatsapp.php:175
 msgid "Please, read the FAQ"
 msgstr ""

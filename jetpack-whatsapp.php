@@ -3,7 +3,7 @@
  * Plugin Name: WhatsApp Sharing Button for Jetpack
  * Plugin URI: http://valeriosouza.com.br/portfolio/whatsapp-sharing-button-for-jetpack/?utm_source=plugin&utm_medium=plugin-url&utm_campaign=jetpack-whatsapp
  * Description: Add WhatsApp button to Jetpack Sharing
- * Version: 1.2.1
+ * Version: 1.3
  * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
@@ -48,7 +48,7 @@ function jw_dependencies_notice() {
 define( 'jetwhats__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jetwhats__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jetwhats__PLUGIN_FILE', __FILE__ );
-define( 'jetwhats__VERSION',     '1.2.1' );
+define( 'jetwhats__VERSION',     '1.3' );
 
 add_action( 'init', array( 'Jetpack_Whatsapp_Pack', 'init' ) );
 
@@ -76,12 +76,13 @@ class Jetpack_Whatsapp_Pack {
 	    $user_id = $current_user->ID;
 
 		add_action( 'wp_enqueue_scripts',    	array( &$this, 'register_assets' ) );
-		add_action( 'admin_enqueue_scripts', 	array( &$this, 'admin_menu_js' ) );
-		add_action( 'admin_enqueue_scripts', 	array( &$this, 'admin_menu_css' ) );
+		add_action( 'admin_enqueue_scripts', 	array( &$this, 'admin_assets' ) );
 		if ( ! get_user_meta($user_id, 'whatsapp_ignore_notice') ) {
 			add_action( 'admin_notices', 		array( &$this, 'plugin_faq_notice' ) );
 		}
-		add_action( 'admin_notices', 		 	array( &$this, 'plugin_donate_notice' ) );
+		if ( ! get_option( 'whatsapp_jetpack_button_pro_active' ) ) {
+			add_action( 'admin_notices', 		 	array( &$this, 'plugin_pro_notice' ) );
+		}
 		add_action( 'wp_ajax_remove_notice', 	array( &$this, 'remove_notice') );
 		register_deactivation_hook( __FILE__,	array( &$this, 'update' ));
 
@@ -121,15 +122,9 @@ class Jetpack_Whatsapp_Pack {
 		wp_enqueue_style( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/css/style.css', array(), jetwhats__VERSION );
 	}
 
-	function admin_menu_css($hook) {
-		if( $hook == 'settings_page_sharing' ) {
-				wp_enqueue_style( 'jetpack-whatsapp-css', jetwhats__PLUGIN_URL . 'assets/css/style.css', array('sharing', 'sharing'), jetwhats__VERSION );
-			}
-	}
-
-	function admin_menu_js() {
-		wp_register_script( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/js/main.js', array('jquery','sharing-js'), jetwhats__VERSION, true );
-		//wp_enqueue_scripts( 'jetpack-whatsapp' );
+	function admin_assets() {
+		wp_enqueue_script( 'jetpack-whatsapp', jetwhats__PLUGIN_URL . 'assets/js/main.js', array(), jetwhats__VERSION, true );
+		wp_enqueue_style( 'jetpack-whatsapp-css', jetwhats__PLUGIN_URL . 'assets/css/style.css', array(), jetwhats__VERSION );
 			wp_localize_script( 'jetpack-whatsapp', 'remove_notice', array(
 				'ajax_url' => admin_url( 'admin-ajax.php' )
 			));
@@ -149,8 +144,8 @@ class Jetpack_Whatsapp_Pack {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a target="_blank" href="%s" style="color:#ffa100;font-weight:bold;">%s</a>',
-				esc_url('http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate&utm_campaign=jetpack-whatsapp'),
-				__( 'Donate', 'whatsapp-jetpack-button' )
+				esc_url('http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate&utm_campaign=jetpack-whatsapp'),
+				__( 'Get Pro', 'whatsapp-jetpack-button' )
 			);
 		}
 		return $links;
@@ -160,7 +155,7 @@ class Jetpack_Whatsapp_Pack {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a target="_blank" href="%s" style="color:#ffa100;font-weight:bold;">%s</a>',
-				esc_url('http://valeriosouza.com.br/project-tag/jetpack-addons/?utm_source=plugin&utm_medium=more-addons&utm_campaign=jetpack-whatsapp'),
+				esc_url('http://wordlab.com.br/plugins/?utm_source=plugin&utm_medium=more-addons&utm_campaign=jetpack-whatsapp'),
 				__( 'More add-ons', 'whatsapp-jetpack-button' )
 			);
 		}
@@ -169,9 +164,9 @@ class Jetpack_Whatsapp_Pack {
 
 	/* Display a notice that can be dismissed */
 
-	function plugin_donate_notice() {
+	function plugin_pro_notice() {
 	        echo '<div class="notice notice-info notice-donate"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Like the plugin WhatsApp Sharing Button for Jetpack? Develop free plugins takes work! Be my boss and make a ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/donate/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('donation of any amount', 'whatsapp-jetpack-button'));
+	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove advertisements and get more control in your Google Analytics. ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('Read More', 'whatsapp-jetpack-button'));
 	        echo "</p></div>";
 	}
 

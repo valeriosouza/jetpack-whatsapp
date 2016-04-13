@@ -4,7 +4,7 @@ Donate link: http://wordlab.com.br/donate/
 Tags: Jetpack, social, sharing, share, SNS,WhatsApp, whatsapp, WHATSAPP, Jetpack Sharing, Button WhatsApp, WhatsApp Button for Jetpack Sharing, WhatsApp Sharing Button for Jetpack
 Requires at least: 3.8
 Tested up to: 4.4
-Stable tag: 1.2.1
+Stable tag: 1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.txt
 
@@ -24,6 +24,10 @@ This supplies additional Jetpack sharing WhatsApp Button for your website.
 Read the [FAQ](https://wordpress.org/plugins/whatsapp-jetpack-button/faq/) before use.
 
 Want to help? Use the [support](https://wordpress.org/support/plugin/whatsapp-jetpack-button)
+
+**Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove advertisements and get more control in your Google Analytics.**
+
+[Get Pro](http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro)
 
 = Want to help? =
 
@@ -77,6 +81,10 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 
 == Changelog ==
 
+= 1.3 - 13/04/2016 =
+
+* Fix Bugs
+
 = 1.2 - 25/01/2016 =
 
 * Update Translate
@@ -115,6 +123,10 @@ For some reason, we do not know or WhatsApp application, or Windows Phone, the b
 * Initial Beta Release
 
 == Upgrade Notice ==
+
+= 1.3 - 13/04/2016 =
+
+* Fix Bugs
 
 = 1.2 - 25/01/2016 =
 

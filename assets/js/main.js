@@ -9,7 +9,7 @@ jQuery( document ).on( 'click', '.notice-faq', function() {
 			user_id : user_id
 		},
 		success : function( response ) {
-			alert(response)
+			/*alert(response)*/
 		}
 	});
 })
