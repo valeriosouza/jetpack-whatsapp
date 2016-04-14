@@ -166,7 +166,7 @@ class Jetpack_Whatsapp_Pack {
 
 	function plugin_pro_notice() {
 	        echo '<div class="notice notice-info notice-donate"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove advertisements and get more control in your Google Analytics. ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('Read More', 'whatsapp-jetpack-button'));
+	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove advertisements and get more control in your Google Analytics. You earned 50% discount, use <strong>vfree50</strong> cupom. ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('Read More', 'whatsapp-jetpack-button'));
 	        echo "</p></div>";
 	}
 
