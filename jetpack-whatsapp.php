@@ -3,7 +3,7 @@
  * Plugin Name: WhatsApp Sharing Button for Jetpack
  * Plugin URI: http://valeriosouza.com.br/portfolio/whatsapp-sharing-button-for-jetpack/?utm_source=plugin&utm_medium=plugin-url&utm_campaign=jetpack-whatsapp
  * Description: Add WhatsApp button to Jetpack Sharing
- * Version: 1.3
+ * Version: 1.3.1
  * Author: Valerio Souza, WordLab Academy
  * Author URI: http://www.valeriosouza.com.br
  * License: GPLv3 or later
@@ -48,7 +48,7 @@ function jw_dependencies_notice() {
 define( 'jetwhats__PLUGIN_DIR',  plugin_dir_path( __FILE__ ) );
 define( 'jetwhats__PLUGIN_URL',  plugin_dir_url( __FILE__ ) );
 define( 'jetwhats__PLUGIN_FILE', __FILE__ );
-define( 'jetwhats__VERSION',     '1.3' );
+define( 'jetwhats__VERSION',     '1.3.1' );
 
 add_action( 'init', array( 'Jetpack_Whatsapp_Pack', 'init' ) );
 
@@ -79,9 +79,7 @@ class Jetpack_Whatsapp_Pack {
 		add_action( 'admin_enqueue_scripts', 	array( &$this, 'admin_assets' ) );
 		if ( ! get_user_meta($user_id, 'whatsapp_ignore_notice') ) {
 			add_action( 'admin_notices', 		array( &$this, 'plugin_faq_notice' ) );
-		}
-		if ( ! get_option( 'whatsapp_jetpack_button_pro_active' ) ) {
-			add_action( 'admin_notices', 		 	array( &$this, 'plugin_pro_notice' ) );
+			add_action( 'admin_notices', 		array( &$this, 'plugin_pro_notice' ) );
 		}
 		add_action( 'wp_ajax_remove_notice', 	array( &$this, 'remove_notice') );
 		register_deactivation_hook( __FILE__,	array( &$this, 'update' ));
@@ -144,7 +142,7 @@ class Jetpack_Whatsapp_Pack {
 		if( plugin_basename( jetwhats__PLUGIN_FILE ) === $file ) {
 			$links[] = sprintf(
 				'<a target="_blank" href="%s" style="color:#ffa100;font-weight:bold;">%s</a>',
-				esc_url('http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate&utm_campaign=jetpack-whatsapp'),
+				esc_url('http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=getpro&utm_campaign=jetpack-whatsapp'),
 				__( 'Get Pro', 'whatsapp-jetpack-button' )
 			);
 		}
@@ -165,8 +163,8 @@ class Jetpack_Whatsapp_Pack {
 	/* Display a notice that can be dismissed */
 
 	function plugin_pro_notice() {
-	        echo '<div class="notice notice-info notice-donate"><p>';
-	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Remove advertisements and get more control in your Google Analytics. You earned 50% discount, use <strong>vfree50</strong> cupom. ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=donate-notice&utm_campaign=jetpack-whatsapp', __('Read More', 'whatsapp-jetpack-button'));
+	        echo '<div class="notice notice-info notice-faq is-dismissible"><p>';
+	        printf('%s<a target="_blank" href="%s">%s</a>.',__('Learn about the benefits of WhatsApp Sharing Button for Jetpack Pro. Get more control in your Google Analytics. You earned 50% discount, use <strong>vfree50</strong> cupom. ', 'whatsapp-jetpack-button'), 'http://wordlab.com.br/plugins/downloads/whatsapp-sharing-button-for-jetpack-pro/?utm_source=plugin&utm_medium=buy-notice&utm_campaign=jetpack-whatsapp', __('Read More', 'whatsapp-jetpack-button'));
 	        echo "</p></div>";
 	}
 
